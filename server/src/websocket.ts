@@ -19,6 +19,13 @@ wss.on('connection', (socket) => {
             const instruction = validateCopyInstruction(message.data);
 
             console.log('Accepted copy instruction:', instruction);
+
+            socket.send(
+                JSON.stringify({
+                    type: 'copy-trade-accepted',
+                    data: instruction,
+                })
+            );
         } catch (error) {
             console.error('Invalid WebSocket message:', error);
         }

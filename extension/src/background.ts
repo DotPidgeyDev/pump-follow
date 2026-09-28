@@ -52,6 +52,15 @@ function connect(): void {
 
             console.log('Wallet state received:', walletState);
         }
+
+        if (message.type === 'copy-trade-accepted') {
+            console.log(
+                'Copy trade accepted by server:',
+                message.data
+            );
+
+            return;
+        }
     });
 
     socket.addEventListener('close', () => {
