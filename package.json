@@ -1,0 +1,28 @@
+{
+  "name": "pump-follow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "tsx server/src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^18.0.4",
+    "ws": "^8.21.3"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.3.0",
+    "@types/node": "^26.6.3",
+    "@types/ws": "^8.18.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}
